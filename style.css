@@ -1,0 +1,37 @@
+/*
+구글폰트
+1.구글폰트 들어가서 폰트 선택
+2.link 또는 import 선택해서 html이나 css에 복붙
+3.폰트를 사용하고자 하는 곳에 font-family적용
+
+눈누
+1.눈누에서 폰트 선택
+2.맨 위에 복붙
+3.body중 font family: 이하에 '' 부분 복붙
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@700&display=swap');
+@font-face {
+    font-family: 'SEBANG_Gothic_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Kaisei Tokumin', serif;
+    margin: 0;
+}
+
+nav {
+    display: flex; /*flex로 설정*/
+    justify-content: flex-end; /*오른쪽 정렬*/
+    background-color: yellow;
+}
+
+ul {
+    list-style: none; /*리스트 앞에 붙어있는 동그란 점을 없앰*/
+    display: flex; /*flex로 설정*/
+    column-gap: 2rem; /*아이템 간 간격을 2rem(=32px)로 설정*/
+    padding-right: 0;
+}
